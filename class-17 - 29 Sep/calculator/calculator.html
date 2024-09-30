@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="calculator-body">
+        <div class="display-wrapper">
+          <input type="text" id="display" readonly="readonly" />
+        </div>
+
+        <div class="bnt-wrapper">
+          <div class="row">
+            <button
+              type="button"
+              onclick="clearResult()"
+              class="color-1 wider-btn"
+            >
+              AC
+            </button>
+            <button type="button" onclick="getNumber('/')" class="color-2">
+              /
+            </button>
+          </div>
+
+          <div class="row">
+            <button type="button" onclick="getNumber('7')" class="color-3">
+              7
+            </button>
+            <button type="button" onclick="getNumber('8')" class="color-3">
+              8
+            </button>
+            <button type="button" onclick="getNumber('9')" class="color-3">
+              9
+            </button>
+            <button type="button" onclick="getNumber('*')" class="color-2">
+              x
+            </button>
+          </div>
+
+          <div class="row">
+            <button type="button" onclick="getNumber('4')" class="color-3">
+              4
+            </button>
+            <button type="button" onclick="getNumber('5')" class="color-3">
+              5
+            </button>
+            <button type="button" onclick="getNumber('6')" class="color-3">
+              6
+            </button>
+            <button type="button" onclick="getNumber('-')" class="color-2">
+              -
+            </button>
+          </div>
+
+          <div class="row">
+            <button type="button" onclick="getNumber('1')" class="color-3">
+              1
+            </button>
+            <button type="button" onclick="getNumber('2')" class="color-3">
+              2
+            </button>
+            <button type="button" onclick="getNumber('3')" class="color-3">
+              3
+            </button>
+            <button type="button" onclick="getNumber('+')" class="color-2">
+              +
+            </button>
+          </div>
+
+          <div class="row">
+            <button type="button" onclick="getNumber('0')" class="color-3">
+              0
+            </button>
+            <button type="button" onclick="getNumber('.')" class="color-3">
+              .
+            </button>
+            <button
+              type="button"
+              onclick="getResult()"
+              class="color-2 wide-btn"
+            >
+              =
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
